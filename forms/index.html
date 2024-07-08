@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo</title>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/meojqwde" method="POST">
+      <div>
+        <label for="name">Nome</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div>
+        <label for="message">Mensagem</label> <br />
+        <textarea
+          placeholder="Digite sua mensagem"
+          name="message"
+          required
+          rows="10"
+          cols="50"
+        ></textarea>
+      </div>
+      <div>
+        <label for="term"
+          >Escolha as tecnologias que você tem experiência</label
+        >
+        <br />
+        <ul>
+          <li>
+            <input type="checkbox" name="react" value="yes" />
+            React.js
+          </li>
+          <li>
+            <input type="checkbox" name="next" value="yes" />
+            Next.js
+          </li>
+          <li>
+            <input type="checkbox" name="html" value="yes" />
+            HTML
+          </li>
+        </ul>
+      </div>
+      <div>
+        <label for="trail">Escolha qual trilha deseja cursar</label> <br />
+        <ul>
+          <li>
+            <input type="radio" value="frontEnd" checked name="trail" />
+            Front-end
+          </li>
+          <li><input type="radio" value="backEnd" name="trail" /> Back-end</li>
+          <li><input type="radio" value="dados" name="trail" />Dados</li>
+        </ul>
+      </div>
+      <div>
+        <label for="modality"
+          >Em qual modalidade você gostaria de participar?</label
+        >
+        <select name="modality">
+          <option selected value="presencial">Presencial</option>
+          <option value="remoto">Remoto</option>
+        </select>
+      </div>
+
+      <input type="checkbox" name="term" value="yes" />
+      <span>Eu aceito os termos de uso</span> <br />
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
